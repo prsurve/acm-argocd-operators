@@ -5,6 +5,8 @@ metadata:
     app.kubernetes.io/component: velero
   name: velero
   namespace: openshift-adp
+  annotations:
+    argocd.argoproj.io/sync-wave: "3"
 spec:
   backupImages: false
   configuration:

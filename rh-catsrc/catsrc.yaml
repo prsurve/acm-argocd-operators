@@ -1,0 +1,17 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: redhat-operators
+  namespace: openshift-marketplace
+spec:
+  displayName: Openshift Container Storage
+  icon:
+    base64data: ""
+    mediatype: ""
+  image: quay.io/rhceph-dev/ocs-registry:4.20.0-107.konflux
+  priority: 100
+  publisher: Red Hat
+  sourceType: grpc
+  updateStrategy:
+    registryPoll:
+      interval: 15m

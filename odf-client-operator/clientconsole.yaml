@@ -1,0 +1,26 @@
+apiVersion: console.openshift.io/v1
+kind: ConsolePlugin
+metadata:
+  name: odf-client-console
+  annotations:
+    argocd.argoproj.io/sync-wave: "3"
+spec:
+  backend:
+    service:
+      basePath: /
+      name: ocs-client-operator-console
+      namespace: openshift-storage
+      port: 9001
+    type: Service
+  displayName: ODF Client Console
+  i18n:
+    loadType: ""
+  proxy:
+  - alias: s3
+    authorization: None
+    endpoint:
+      service:
+        name: s3-endpoint-proxy
+        namespace: openshift-storage
+        port: 443
+      type: Service

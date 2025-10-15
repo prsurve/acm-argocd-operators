@@ -3,3 +3,4 @@ resources:
   - ./oadp-operator
   - ./rh-catsrc
   - ./odf-client-operator
+  - ./submariner-catsrc

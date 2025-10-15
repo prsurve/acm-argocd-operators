@@ -3,4 +3,3 @@ resources:
 - namespace.yaml
 - operatorgroup.yaml
 - subscription.yaml
-- clientconsole.yaml

@@ -7,7 +7,7 @@ metadata:
   namespace: openshift-adp
   annotations:
     argocd.argoproj.io/sync-wave: "3"
-    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true,Timeout=600
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true,Prune=false
 spec:
   backupImages: false
   configuration:

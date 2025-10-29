@@ -2,5 +2,5 @@ resources:
   - ./gitops-operator
   - ./oadp-operator
   - ./rh-catsrc
-  # - ./odf-client-operator
+  - ./odf-client-operator
   - ./submariner-catsrc

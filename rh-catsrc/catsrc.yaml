@@ -8,7 +8,7 @@ spec:
   icon:
     base64data: ""
     mediatype: ""
-  image: quay.io/rhceph-dev/ocs-registry:4.20.0-113.konflux
+  image: quay.io/rhceph-dev/ocs-registry:4.19.7-2.konflux
   priority: 100
   publisher: Red Hat
   sourceType: grpc
